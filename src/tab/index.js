@@ -1,13 +1,7 @@
-console.log(-1)
 import Vue from 'vue'
-console.log(0)
 import root from './root.vue'
-console.log(1)
 import TrxWallet from 'trxwallet'
-console.log(2)
 const app = TrxWallet('#root')
-console.log(3)
-
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
