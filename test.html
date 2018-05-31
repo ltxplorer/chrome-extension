@@ -1,0 +1,17 @@
+<html>
+
+    <body>
+
+        <button id="freeze">Request Freeze</button>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+                $('#freeze').click(()=>{
+                    var data = { type: "TRXWALLET_SIGNATURE_REQUEST", transaction: {type:'freeze',options:{amount:200}} };
+		            window.postMessage(data, "*");
+                })
+                
+        </script>
+    </body>
+
+</html>
