@@ -21,3 +21,10 @@ screen and will ask the logged used for his credentials (wallet password, not pr
  window.postMessage(data, "*");
 ```
 If the user accepts and provide the correct password, the transaction will be broadcasted to TRON network
+
+
+## Integration
+
+[TRXPlorer.io](https://www.trxplorer.io) (tron blockchain explorer) will be the first third party app fully integrated with this chrome-extension. 
+
+Users will be able to vote, send trx, tokens, unfreeze etc directly from trxplorer.io without any wallet directly integrated into the website.
