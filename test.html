@@ -2,15 +2,27 @@
 
     <body>
 
-        <button id="freeze">Request Freeze</button>
+        <button id="freeze">Request Freeze</button><br>
+        <button id="sendTRX">Send TRX</button><br>
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>
                 $('#freeze').click(()=>{
-                    var data = { type: "TRXWALLET_SIGNATURE_REQUEST", transaction: {type:'freeze',options:{amount:200}} };
+                    var data = { type: "TRXWALLET_SIGNATURE_REQUEST", transaction: {type:'freeze',options:{issuer:'TestApp',amount:200}} };
 		            window.postMessage(data, "*");
                 })
-                
+                $('#sendTRX').click(()=>{
+                    var data = { type: "TRXWALLET_SIGNATURE_REQUEST", transaction: {type:'sendTRX',options:{issuer:'TestApp',amount:200,to:'TC8v4x54wKdwxCyJSvqJFp5t5tknRNdt5X'}} };
+		            window.postMessage(data, "*");
+                })
+                window.addEventListener("message", function(event) {
+
+                    if (event.data.type && (event.data.type == "TRXWALLET_SIGNATURE_SUCCESS")) {
+
+                        console.log('successSignature',event.data)
+
+                    }
+            });
         </script>
     </body>
 

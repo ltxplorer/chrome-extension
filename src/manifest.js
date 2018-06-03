@@ -2,7 +2,7 @@
 module.exports = {
   name: 'TRXWallet - Tron wallet',
   version: '0.0.1',
-  description: 'Tron TRXWallet is an open source secure offline wallet for chrome that prevent you from revealing your private key. With Tron wallet, you can send TRX or any TRON based token, vote for TRON SR election and much more !',
+  description: 'Tron TRXWallet is a secure offline wallet that keeps your private key safe.You can send TRX, vote for TRON SR election and much more',
   author: 'tronwallet',
   manifest_version: 2,
   icons: { '16': 'icons/16.png','48':'icons/48.png', '128': 'icons/128.png' },
