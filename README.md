@@ -1,12 +1,14 @@
-# chrome-extension
+# DEPRECATED
+This project is now deprecated in favor of https://github.com/TronWatch/TronLink
 
-Tron wallet chrome extension that uses https://github.com/tronwallet/trxwallet application. 
+
+Tron wallet chrome extension that uses https://github.com/trxplorer/trxwallet application. 
 
 The chrome extension uses trxwallet extension mechanism in order to provide a simple but effective way to sign transactions offline while never submitting/revealing the private key to third party websites/applications.
 
 ## Chrome extension features
 
-For currently implemented wallet features see : https://github.com/tronwallet/trxwallet
+For currently implemented wallet features see : https://github.com/trxplorer/trxwallet
 
 In addition to TRXWallet features that can be used in the extension, the chrome-extension can be easily invoked by third party website or applications in order to request the authorization for a transaction
 
@@ -22,8 +24,3 @@ screen and will ask the logged used for his credentials (wallet password, not pr
 If the user accepts and provide the correct password, the transaction will be broadcasted to TRON network
 
 
-## Integration
-
-[TRXPlorer.io](https://github.com/trxplorer/explorer) (tron blockchain explorer) will be the first third party app fully integrated with this chrome-extension. 
-
-Users will be able to vote, send trx, tokens, unfreeze etc directly from trxplorer.io without any wallet directly integrated into the website.
